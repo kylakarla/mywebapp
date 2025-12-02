@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -11,6 +12,10 @@
 
     <div class="m-2">
         <a class="h3" th:href="@{/users/new}">Add New User</a>
+    </div>
+
+    <div th:if="${message}" class="alert alert-success text-center">
+        [[${message}]]
     </div>
 
     <div>
